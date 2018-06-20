@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">SoundSpin</string>
+    <!-- Songs title -->
+    <string name="songs">Songs</string>
+    <!-- Artists title -->
+    <string name="singer">Artists</string>
+    <!-- Albums title -->
+    <string name="album">Albums</string>
+    <!-- Playlists title -->
+    <string name="playlist">Playlists</string>
+
+</resources>
+
+

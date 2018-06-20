@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Black/White scale -->
+    <color name="white_background">#FFF</color>
+
+    <color name="colorPrimary">#37474F</color>
+
+    <color name="black_background">#000000</color>
+
+    <!-- Magenta scale -->
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="gradientColor">#C51162</color>
+    <color name="menuColor">#FF1744</color>
+
+
+</resources>

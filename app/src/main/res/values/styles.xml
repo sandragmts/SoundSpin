@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"></style>
+    <!-- Standard layout with&height -->
+
+    <style name="standard_layout">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!-- Style Icon views in main activity-->
+    <style name="menu_views_1">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin_medium</item>
+        <item name="android:layout_marginRight">@dimen/margin_medium</item>
+        <item name="android:layout_marginTop">@dimen/margin_large</item>
+    </style>
+
+    <!-- Style Click Views in main activity-->
+    <style name="menu_views_2">
+        <item name="android:layout_marginLeft">@dimen/margin_large</item>
+        <item name="android:layout_marginRight">@dimen/margin_large</item>
+        <item name="android:layout_marginTop">@dimen/margin_medium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/american_purpose_casual</item>
+        <item name="android:textColor">@color/white_background</item>
+        <item name="android:textSize">@dimen/large_size</item>
+    </style>
+
+    <!-- Style Click Views - MAIN in list activity-->
+    <style name="main_list_view">
+        <item name="android:fontFamily">@font/american_purpouse_casual_two</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style Click Views in list activity-->
+    <style name="sub_list_view">
+        <item name="android:fontFamily">@font/american_purpose_casual</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+</resources>
