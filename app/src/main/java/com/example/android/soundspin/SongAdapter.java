@@ -1,8 +1,6 @@
 package com.example.android.soundspin;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,10 +10,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class WordAdapter extends ArrayAdapter {
+public class SongAdapter extends ArrayAdapter {
 
-    public WordAdapter(Context context, ArrayList<Word> Words) {
-        super(context, 0, Words);
+    public SongAdapter(Context context, ArrayList<SongList> songLists) {
+        super(context, 0, songLists);
     }
 
     @Override
@@ -29,22 +27,22 @@ public class WordAdapter extends ArrayAdapter {
                     R.layout.list_item, parent, false);
         }
 
-        //Get word from the two different lists:
-        Word word = (Word) getItem(position);
+        //Get songList from the two different lists:
+        SongList songList = (SongList) getItem(position);
 
         //Miwok textviews
-        TextView mainTextView = (TextView) listItemView.findViewById(R.id.main_name);
-        mainTextView.setText(word.getMainView());
+        TextView mainTextView = listItemView.findViewById(R.id.main_name);
+        mainTextView.setText(songList.getMainView());
 
         //English textviews
-        TextView defaultTextView = (TextView) listItemView.findViewById(R.id.default_name);
-        defaultTextView.setText(word.getmDefaultView());
+        TextView defaultTextView = listItemView.findViewById(R.id.default_name);
+        defaultTextView.setText(songList.getmDefaultView());
 
         // Find the ImageView in the list_item.xml layout with the ID list_item_icon
-        ImageView iconView = (ImageView) listItemView.findViewById(R.id.list_item_icon);
+        ImageView iconView = listItemView.findViewById(R.id.list_item_icon);
         // Get the image resource ID from the current AndroidFlavor object and
         // set the image to iconView
-        iconView.setImageResource(word.getImageResourceId());
+        iconView.setImageResource(songList.getImageResourceId());
 
         return listItemView;
 
