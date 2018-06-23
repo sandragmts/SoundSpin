@@ -19,34 +19,94 @@
 
         <activity
             android:name=".songs"
-            android:label="@string/songs" />
+            android:label="@string/songs"
+            android:parentActivityName="com.example.android.soundspin.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+
         <activity
             android:name=".artists"
-            android:label="@string/singer" />
+            android:label="@string/singer"
+            android:parentActivityName="com.example.android.soundspin.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
         <activity
             android:name=".albums"
-            android:label="@string/album" />
+            android:label="@string/album"
+            android:parentActivityName="com.example.android.soundspin.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
         <activity
             android:name=".playlists"
-            android:label="@string/playlist" />
+            android:label="@string/playlist"
+            android:parentActivityName="com.example.android.soundspin.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
 
         <activity
             android:name=".moanasongs"
-            android:label="MOANA" />
+            android:label="MOANA"
+            android:parentActivityName="com.example.android.soundspin.moanadisc">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".moanadisc" />
+        </activity>
 
-        <activity android:name=".moanadisc"/>
+
+        <activity
+            android:name=".moanadisc"
+            android:parentActivityName="com.example.android.soundspin.songs">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".songs" />
+        </activity>
+
 
         <activity
             android:name=".frozensongs"
-            android:label="FROZEN" />
+            android:label="FROZEN"
+            android:parentActivityName="com.example.android.soundspin.frozendisc">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frozendisc" />
+        </activity>
 
-        <activity android:name=".frozendisc"/>
+
+        <activity
+            android:name=".frozendisc"
+            android:parentActivityName="com.example.android.soundspin.songs">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".songs" />
+        </activity>
 
         <activity
             android:name=".aladdinsongs"
-            android:label="ALADDIN" />
+            android:label="ALADDIN"
+            android:parentActivityName="com.example.android.soundspin.songs">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".songs" />
+        </activity>
 
-        <activity android:name=".aladdindisc"/>
+        <activity
+            android:name=".aladdindisc"
+            android:parentActivityName="com.example.android.soundspin.songs">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".songs" />
+        </activity>
 
 
     </application>

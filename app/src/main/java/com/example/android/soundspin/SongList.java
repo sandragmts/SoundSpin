@@ -1,14 +1,10 @@
 package com.example.android.soundspin;
 
-import android.content.Intent;
-import android.view.View;
-import android.widget.TextView;
-
 /**
- * {@link Word} represents a the music category the user wishes to view.
+ * {@link SongList} represents a the music category the user wishes to view.
  * It contains main info about each category and sub info about each category.
  */
-public class Word {
+public class SongList {
 
     /**
      * Main info about each category
@@ -27,24 +23,24 @@ public class Word {
     private int mImageResourceId;
 
     /**
-     * Create a new Word object.
+     * Create a new SongList object.
      *
      * @param mainView    is the main info about a category
      * @param defaultView is the sub info about a main info
      */
-    public Word(String mainView, String defaultView) {
+    public SongList(String mainView, String defaultView) {
         mMainView = mainView;
         mDefaultView = defaultView;
     }
 
     /**
-     * Create a new Word object.
+     * Create a new SongList object.
      *
      * @param mainView        shows main info for each activity
      * @param defaultView     gets the sub info for each acitivity
      * @param imageResourceId is the drawable resource ID for the image associated with the word
      */
-    public Word(String mainView, String defaultView, int imageResourceId) {
+    public SongList(String mainView, String defaultView, int imageResourceId) {
         mMainView = mainView;
         mDefaultView = defaultView;
         mImageResourceId = imageResourceId;

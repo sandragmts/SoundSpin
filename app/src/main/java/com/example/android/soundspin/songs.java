@@ -2,8 +2,8 @@ package com.example.android.soundspin;
 
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -18,32 +18,33 @@ public class songs extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        // Create a list of words
-        ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("3:24", "Where You Are", R.drawable.songs));
-        words.add(new Word("2:41", "How Far I'll Go", R.drawable.songs));
-        words.add(new Word("2:42", "You're Welcome", R.drawable.songs));
-        words.add(new Word("3:00", "Shiny", R.drawable.songs));
-        words.add(new Word("3:25", "Do You Wanna Build A Snowman?", R.drawable.songs));
-        words.add(new Word("1:51", "In Summer", R.drawable.songs));
-        words.add(new Word("2:05", "Love Is An Open Door", R.drawable.songs));
-        words.add(new Word("3:43", "Let It Go", R.drawable.songs));
-        words.add(new Word("1:17", "Arabian Nights", R.drawable.songs));
-        words.add(new Word("2:20", "One Jump Ahead", R.drawable.songs));
-        words.add(new Word("2:39", "Whole New World", R.drawable.songs));
-        words.add(new Word("0:53", "Prince Ali", R.drawable.songs));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create a list of songLists
+        ArrayList<SongList> songLists = new ArrayList<SongList>();
+        songLists.add(new SongList("3:24", getString(R.string.m_song_1), R.drawable.songs));
+        songLists.add(new SongList("2:41", getString(R.string.m_song_2), R.drawable.songs));
+        songLists.add(new SongList("2:42", getString(R.string.m_song_3), R.drawable.songs));
+        songLists.add(new SongList("3:00", getString(R.string.m_song_4), R.drawable.songs));
+        songLists.add(new SongList("3:25", getString(R.string.f_song_1), R.drawable.songs));
+        songLists.add(new SongList("1:51", getString(R.string.f_song_2), R.drawable.songs));
+        songLists.add(new SongList("2:05", getString(R.string.f_song_3), R.drawable.songs));
+        songLists.add(new SongList("3:43", getString(R.string.f_song_4), R.drawable.songs));
+        songLists.add(new SongList("1:17", getString(R.string.a_song_1), R.drawable.songs));
+        songLists.add(new SongList("2:20", getString(R.string.a_song_2), R.drawable.songs));
+        songLists.add(new SongList("2:39", getString(R.string.a_song_3), R.drawable.songs));
+        songLists.add(new SongList("0:53", getString(R.string.a_song_4), R.drawable.songs));
+
+        // Create an {@link SongAdapter}, whose data source is a list of {@link SongList}s. The
         // adapter knows how to create list items for each item in the list.
-        WordAdapter adapter = new WordAdapter(this, words);
+        SongAdapter adapter = new SongAdapter(this, songLists);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
         // activity_numbers.xml layout file.
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView = findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // Make the {@link ListView} use the {@link SongAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link SongList} in the list.
         listView.setAdapter(adapter);
 
         //Set onclick to open next activity

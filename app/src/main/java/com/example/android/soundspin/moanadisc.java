@@ -16,21 +16,20 @@ public class moanadisc extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.word_list);
 
-        ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("4 songs", "Disney Moana", R.drawable.moana));
-        words.add(new Word("3 albums", "Disney Playlist", R.drawable.playlist));
+        ArrayList<SongList> songLists = new ArrayList<SongList>();
+        songLists.add(new SongList("4 songs", "Disney Moana", R.drawable.moana));
 
-        // Create an {@link WordAdapter}, whose data source is a list of {@link Word}s. The
+        // Create an {@link SongAdapter}, whose data source is a list of {@link SongList}s. The
         // adapter knows how to create list items for each item in the list.
-        WordAdapter adapter = new WordAdapter(this, words);
+        SongAdapter adapter = new SongAdapter(this, songLists);
 
         // Find the {@link ListView} object in the view hierarchy of the {@link Activity}.
         // There should be a {@link ListView} with the view ID called list, which is declared in the
         // activity_numbers.xml layout file.
-        ListView listView = (ListView) findViewById(R.id.list);
+        ListView listView = findViewById(R.id.list);
 
-        // Make the {@link ListView} use the {@link WordAdapter} we created above, so that the
-        // {@link ListView} will display list items for each {@link Word} in the list.
+        // Make the {@link ListView} use the {@link SongAdapter} we created above, so that the
+        // {@link ListView} will display list items for each {@link SongList} in the list.
         listView.setAdapter(adapter);
 
         //Set onclick to open next activity
@@ -39,18 +38,13 @@ public class moanadisc extends AppCompatActivity {
         {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
+                Intent myIntent = new Intent(view.getContext(), moanasongs.class);
+                startActivityForResult(myIntent, 0);
 
-                if (position == 0) {
-                    Intent myIntent = new Intent(view.getContext(), moanasongs.class);
-                    startActivityForResult(myIntent, 0);
-                } else if (position == 1) {
-                    Intent myIntent = new Intent(view.getContext(), songs.class);
-                    startActivityForResult(myIntent, 0);
-
-                }
             }
         });
-
     }
+
 }
+
 

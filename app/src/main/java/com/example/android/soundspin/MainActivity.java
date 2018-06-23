@@ -1,7 +1,6 @@
 package com.example.android.soundspin;
 
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -15,15 +14,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
 
         //Set picture
-        ImageView songs = (ImageView) findViewById(R.id.button1);
+        ImageView songs = findViewById(R.id.button1);
         songs.setImageResource(R.drawable.songs);
 
         // Find the View that shows the songs category
-        TextView songsList = (TextView) findViewById(R.id.songs);
+        TextView songsList = findViewById(R.id.songs);
 
         // Set a click listener on that View
         songsList.setOnClickListener(new View.OnClickListener() {
@@ -36,11 +36,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Set picture
-        ImageView artists= (ImageView) findViewById(R.id.button2);
+        ImageView artists = findViewById(R.id.button2);
         artists.setImageResource(R.drawable.singer);
 
         // Find the View that shows the songs category
-        TextView artistsList = (TextView) findViewById(R.id.artists);
+        TextView artistsList = findViewById(R.id.artists);
 
         // Set a click listener on that View
         artistsList.setOnClickListener(new View.OnClickListener() {
@@ -53,11 +53,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //Set picture
-        ImageView albums = (ImageView) findViewById(R.id.button5);
+        ImageView albums = findViewById(R.id.button5);
         albums.setImageResource(R.drawable.album);
 
         // Find the View that shows the songs category
-        TextView albumslist = (TextView) findViewById(R.id.albums);
+        TextView albumslist = findViewById(R.id.albums);
 
         // Set a click listener on that View
         albumslist.setOnClickListener(new View.OnClickListener() {
@@ -71,11 +71,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         //Set picture
-        ImageView playlist = (ImageView) findViewById(R.id.button6);
+        ImageView playlist = findViewById(R.id.button6);
         playlist.setImageResource(R.drawable.playlist);
 
         // Find the View that shows the songs category
-        TextView playlistView = (TextView) findViewById(R.id.playlists);
+        TextView playlistView = findViewById(R.id.playlists);
 
         // Set a click listener on that View
         playlistView.setOnClickListener(new View.OnClickListener() {

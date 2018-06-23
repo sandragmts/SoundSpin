@@ -9,6 +9,47 @@
     <!-- Playlists title -->
     <string name="playlist">Playlists</string>
 
+    <!--Moana strings -->
+    <string name="moana">Disney Moana</string>
+    <string name="m_song_1">Where You Are</string>
+    <string name="m_song_2">How Far I\'ll Go</string>
+    <string name="m_song_3">You\'re Welcome</string>
+    <string name="m_song_4">Shiny</string>
+
+    <string name="m_singer_1">Christopher Jackson, Rachel House and 3</string>
+    <string name="m_singer_2">Auli\'i Cravalho</string>
+    <string name="m_singer_3">Dwayne Johnson</string>
+    <string name="m_singer_4">Jamaine Clement</string>
+
+    <!--Frozen strings -->
+    <string name="frozen">Disney Frozen</string>
+    <string name="f_song_1">Do You Wanna Build a Snowman?</string>
+    <string name="f_song_2">Love Is An Open Door</string>
+    <string name="f_song_3">In Summer</string>
+    <string name="f_song_4">Let It Go</string>
+
+    <string name="f_singer_1">Kristen Bell, Agatha Lee Monn and 1</string>
+    <string name="f_singer_2">Kristen Bell, Santino Fontana</string>
+    <string name="f_singer_3">Josh Gad</string>
+    <string name="f_singer_4">Indina Menzel</string>
+
+    <!--Aladdin strings -->
+    <string name="aladdin">Disney Aladdin</string>
+    <string name="a_song_1">Arabian Nigths</string>
+    <string name="a_song_2">One Jump Ahead</string>
+    <string name="a_song_3">Whole New World</string>
+    <string name="a_song_4">Prince Ali</string>
+
+    <string name="a_singer_1">Bruce Adler</string>
+    <string name="a_singer_2">Brad Kane</string>
+    <string name="a_singer_3">Bruce Adler, Lea Salong</string>
+    <string name="a_singer_4">Jonathan Freeman</string>
+
+    <!--Artists -->
+    <string name="one_song">1 Song</string>
+    <string name="artists">4 songs, Various Singers</string>
+
+
 </resources>
 
 
