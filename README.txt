@@ -4,4 +4,4 @@ All sources used on this project, from android tutorials to fonts and images wer
 
 If this project conflicts with material you have created please contact the developer >
 
-![](https://github.com/sandragmts/SoundSpin/blob/3199270778741a88147785d777c5ef594bbbe553/app/src/main/res/Screenshot_1529773475.png?raw=true)
+![](https://imgur.com/HtH8By1)
