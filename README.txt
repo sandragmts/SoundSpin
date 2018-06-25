@@ -4,4 +4,4 @@ All sources used on this project, from android tutorials to fonts and images wer
 
 If this project conflicts with material you have created please contact the developer >
 
-![](https://imgur.com/HtH8By1)
+![](https://i.imgur.com/HtH8By1.png)
